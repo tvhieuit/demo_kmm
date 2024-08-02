@@ -95,7 +95,17 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
+
+    flavorDimensions("test")
+    productFlavors {
+        create("dev") {
+
+        }
+    }
+
+
     dependencies {
         debugImplementation(compose.uiTooling)
     }
