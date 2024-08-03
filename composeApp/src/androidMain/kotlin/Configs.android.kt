@@ -1,5 +1,8 @@
+import org.example.project.BuildConfig
+
+
 class AndroidConfig: Configs {
-    override val baseUrl: String = ""
+    override val baseUrl: String = BuildConfig.FLAVOR
 }
 
 

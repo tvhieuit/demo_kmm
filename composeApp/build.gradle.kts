@@ -1,4 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
@@ -97,8 +96,8 @@ android {
         compose = true
         buildConfig = true
     }
+    flavorDimensions += listOf("test")
 
-    flavorDimensions("test")
     productFlavors {
         create("dev") {
 
